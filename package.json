@@ -7,6 +7,7 @@
   "scripts": {
     "clear-file": "truncate -s 0 src/files/animeNames.csv",
     "manual": "npm run clear-file && node src/processors/manualHandleBackPressure.js",
+    "through-pipeline": "npm run clear-file && node src/processors/HandleBackPressureThroughPipeline.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
