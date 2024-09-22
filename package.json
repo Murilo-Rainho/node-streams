@@ -1,0 +1,15 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "clear-file": "truncate -s 0 src/files/animeNames.csv",
+    "manual": "npm run clear-file && node src/processors/manualHandleBackPressure.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
