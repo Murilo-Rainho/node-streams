@@ -6,11 +6,16 @@
   "main": "index.js",
   "scripts": {
     "clear-file": "truncate -s 0 src/files/animeNames.csv",
-    "manual": "npm run clear-file && node src/processors/manualHandleBackPressure.js",
-    "through-pipeline": "npm run clear-file && node src/processors/HandleBackPressureThroughPipeline.js",
+    "exemple-one": "npm run clear-file && node src/processors/exemple1.js",
+    "exemple-two": "npm run clear-file && node src/processors/exemple2.js",
+    "exemple-three": "npm run clear-file && node src/processors/exemple3.js",
+    "exemple-four": "npm run clear-file && node src/processors/exemple4.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
 }
